@@ -4,6 +4,8 @@ A real-time access control system that authenticates users through **face recogn
 
 Built as a Deep Learning capstone project. The system grants access exclusively to three enrolled team members and rejects all others, including spoof attempts.
 
+in addition ot the README.md, for more in-depth information you can check the project_sumamry.md file.
+
 ---
 
 ## Authors
@@ -45,11 +47,14 @@ Each gate can reject independently. An attacker must defeat **all channels simul
 - NVIDIA GPU with CUDA (recommended; CPU works but slower)
 - Webcam + Microphone
 - Internet connection (for Google Speech-to-Text)
+- The Data set (not mendatory to work): you can put your own dataset. 
+our datasetis in the Drive project folder, link in the docs file sent, needs to be downloaded separately. 
+once the raw data is downloaded, put it in their respective categories (face and voice) and you can start running the project from start to finish.
 
 ### Installation
 
 ```bash
-git clone https://github.com/<your-repo>/secure-gateway-DLProject.git
+git clone https://github.com/xXDavidk1ngXx/secure-gateway-DLProject.git
 cd secure-gateway-DLProject
 python -m venv venv
 venv\Scripts\activate        # Windows
@@ -63,7 +68,7 @@ pip install SpeechRecognition sounddevice scipy mediapipe tqdm numpy
 **Or**, install all dependencies at once from the requirements file:
 
 ```bash
-git clone https://github.com/<your-repo>/secure-gateway-DLProject.git
+git clone https://github.com/xXDavidk1ngXx/secure-gateway-DLProject.git
 cd secure-gateway-DLProject
 python -m venv venv
 venv\Scripts\activate        # Windows
@@ -75,7 +80,7 @@ pip install -r requirements.txt
 ### Pipeline — Run in Order
 
 ```bash
-# Phase 1: Data preparation (run once)
+# Phase 1: Data preparation (run once if data is available)
 python data_preparation/preprocess_faces.py
 python data_preparation/preprocess_voices.py
 python data_preparation/augment_face.py
