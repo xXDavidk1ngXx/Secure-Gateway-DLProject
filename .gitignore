@@ -20,17 +20,14 @@ env/
 #  Biometric Data (private — never commit)
 # ============================================================
 # Face images (raw photos, processed crops, augmented)
-data/face/raw/
-data/face/processed/
-data/face/augmented/
+#data/face/raw/
+#data/face/processed/
+#data/face/augmented/
 
 # Voice recordings (raw clips, processed audio, augmented)
-data/voice/raw/
-data/voice/processed/
-data/voice/augmented/
-
-# Password data
-data/password/
+#data/voice/raw/
+#data/voice/processed/
+#data/voice/augmented/
 
 # ============================================================
 #  Local Data Backup (renamed from accidental .gitignore dir)
