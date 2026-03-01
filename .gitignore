@@ -1,0 +1,56 @@
+# ============================================================
+#  Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+
+# ============================================================
+#  Virtual Environment
+# ============================================================
+venv/
+.venv/
+env/
+
+# ============================================================
+#  Biometric Data (private — never commit)
+# ============================================================
+# Face images (raw photos, processed crops, augmented)
+data/face/raw/
+data/face/processed/
+data/face/augmented/
+
+# Voice recordings (raw clips, processed audio, augmented)
+data/voice/raw/
+data/voice/processed/
+data/voice/augmented/
+
+# Password data
+data/password/
+
+# ============================================================
+#  Local Data Backup (renamed from accidental .gitignore dir)
+# ============================================================
+_local_data/
+
+# ============================================================
+#  IDE & OS
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ============================================================
+#  Miscellaneous
+# ============================================================
+nul
+*.tmp

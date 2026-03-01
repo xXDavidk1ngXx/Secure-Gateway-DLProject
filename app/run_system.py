@@ -5,6 +5,7 @@
 =============================================================================
 
   This is the main entry point for the biometric security system.
+  
   It orchestrates the full authentication pipeline:
 
       1. VOICE PASSWORD (Gate 1 — "Something you know")
