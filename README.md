@@ -4,7 +4,7 @@ A real-time access control system that authenticates users through **face recogn
 
 Built as a Deep Learning capstone project. The system grants access exclusively to three enrolled team members and rejects all others, including spoof attempts.
 
-in addition ot the README.md, for more in-depth information you can check the project_sumamry.md file.
+in addition to the README.md, for more in-depth information you can check the project_sumamry.md file.
 
 ---
 
