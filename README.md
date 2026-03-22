@@ -4,7 +4,7 @@ A real-time access control system that authenticates users through **face recogn
 
 Built as a Deep Learning capstone project. The system grants access exclusively to three enrolled team members and rejects all others, including spoof attempts.
 
-in addition ot the README.md, for more in-depth information you can check the project_sumamry.md file.
+> For a comprehensive technical deep-dive, see [project_summary.md](project_summary.md).
 
 ---
 
@@ -47,9 +47,9 @@ Each gate can reject independently. An attacker must defeat **all channels simul
 - NVIDIA GPU with CUDA (recommended; CPU works but slower)
 - Webcam + Microphone
 - Internet connection (for Google Speech-to-Text)
-- The Data set (not mendatory to work): you can put your own dataset. 
-our datasetis in the Drive project folder, link in the docs file sent, needs to be downloaded separately. 
-once the raw data is downloaded, put it in their respective categories (face and voice) and you can start running the project from start to finish.
+- The dataset (not mandatory to work): you can put your own dataset.
+Our dataset is in the Drive project folder, link in the docs file sent, needs to be downloaded separately.
+Once the raw data is downloaded, put it in their respective categories (face and voice) and you can start running the project from start to finish.
 
 ### Installation
 
@@ -198,6 +198,15 @@ The evaluation suite (`evaluation/visualizer.py`) generates 7 plots saved to `ev
 | Per-Class Performance | All users achieve high precision and recall |
 | Architecture Diagram | Full multi-gate pipeline overview |
 | Dashboard | Combined view of all 6 plots |
+
+### Training Curves
+![Training Curves](evaluation/figures/2_training_curves.png)
+
+### Confusion Matrix
+![Confusion Matrix](evaluation/figures/3_confusion_matrix.png)
+
+### Fused Embedding Space (t-SNE)
+![t-SNE Clusters](evaluation/figures/1_tsne_clusters.png)
 
 ---
 

@@ -47,10 +47,7 @@ Requirements:
     pip install torch torchvision torchaudio facenet-pytorch speechbrain tqdm numpy
 """
 
-#import os
 import os
-#os.environ["SPEECHBRAIN_STRATEGY"] = "copy"
-#os.environ["SB_FETCH_LOCAL_STRATEGY"] = "copy"
 os.environ["SB_LOCAL_STRATEGY"] = "copy"
 
 import sys
@@ -273,7 +270,6 @@ def load_voice_model():
     Returns:
         model: SpeechBrain's EncoderClassifier ready for inference
     """
-    #from speechbrain.pretrained import EncoderClassifier
     from speechbrain.inference import EncoderClassifier
     from speechbrain.utils.fetching import LocalStrategy
 
